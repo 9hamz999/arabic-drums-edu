@@ -1,1 +1,49 @@
-<!DOCTYPE html><html><head><meta charset='UTF-8'><title>Rhythm</title></head><body>Project Ready</body></html>
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مولّد الإيقاعات الموسيقية</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- مكتبة Tone.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>🎵 مولّد الإيقاعات الموسيقية</h1>
+
+        <div class="controls">
+            <button id="playBtn">تشغيل</button>
+
+            <label>
+                سرعة الإيقاع (BPM)
+                <input type="number" id="bpm" value="120" min="60" max="200">
+            </label>
+        </div>
+
+        <!-- مصفوفة الإيقاعات -->
+        <div class="sequencer">
+            <div class="row">
+                <span class="label">Kick</span>
+                <div class="steps" data-sound="kick"></div>
+            </div>
+
+            <div class="row">
+                <span class="label">Snare</span>
+                <div class="steps" data-sound="snare"></div>
+            </div>
+
+            <div class="row">
+                <span class="label">Hi-Hat</span>
+                <div class="steps" data-sound="hihat"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
