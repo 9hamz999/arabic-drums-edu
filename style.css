@@ -1,1 +1,73 @@
-body { font-family: sans-serif; }
+body {
+    font-family: sans-serif;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin-top: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #2196f3;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #1976d2;
+}
+
+.sequencer .row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.label {
+    width: 70px;
+    font-weight: bold;
+}
+
+.steps {
+    display: grid;
+    grid-template-columns: repeat(16, 25px);
+    gap: 5px;
+}
+
+.step {
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.step.active {
+    background: #4caf50;
+    border-color: #388e3c;
+}
