@@ -1,49 +1,36 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>صانع الإيقاعات التعليمي</title>
-    <link rel="stylesheet" href="style.css" />
-
-    <!-- مكتبة Tone.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.7.77/Tone.min.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مولد الإيقاعات التعليمي</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div class="container">
 
-        <h1>صانع الإيقاعات التعليمي</h1>
+<div class="container">
 
-        <div class="controls">
-            <button id="playBtn">تشغيل</button>
+    <h1>مولد الإيقاعات التعليمي 🎵</h1>
 
-            <label>
-                سرعة الإيقاع (BPM)
-                <input type="number" id="bpm" value="120" min="60" max="200">
-            </label>
-        </div>
-
-        <!-- مصفوفة الإيقاعات -->
-        <div class="sequencer">
-            <div class="row">
-                <span class="label">Kick</span>
-                <div class="steps" data-sound="kick"></div>
-            </div>
-
-            <div class="row">
-                <span class="label">Snare</span>
-                <div class="steps" data-sound="snare"></div>
-            </div>
-
-            <div class="row">
-                <span class="label">Hi-Hat</span>
-                <div class="steps" data-sound="hihat"></div>
-            </div>
-        </div>
-
+    <div class="controls">
+        <button id="playBtn">تشغيل</button>
+        <label>
+            سرعة الإيقاع (BPM)
+            <input type="number" id="bpm" value="120" min="60" max="200">
+        </label>
+        <label>
+            عدد المربعات لكل صف
+            <input type="number" id="stepsCount" value="16" min="4" max="64">
+        </label>
     </div>
 
-    <script src="app.js"></script>
+    <div id="sequencer"></div>
+
+    <button id="addSound">➕ إضافة صوت</button>
+
+</div>
+
+<script src="https://unpkg.com/tone"></script>
+<script src="app.js"></script>
 </body>
 </html>
