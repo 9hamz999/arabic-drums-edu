@@ -2,20 +2,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // مكتبة الأصوات
     const soundLibrary = {
-        "Bendir1": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/Ban1.mp3",
-        "Bendir2": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/Ban2.wav",
-        "Bendir3": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/Ban3.wav",
-        "Bendir4": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/Ban4.wav",
-        "Bendir5": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/Ban5.wav",
-        "Bdoff dom": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/doff%20group%20dom.wav",
-        "doff sha": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/doff%20group%20sha.wav",
-        "doff tak": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/doff%20group%20tak.wav",
-        "PRCDavul Dum": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer5/PRCDavul%20Dum.wav",
-        "PRCDavul Tek": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer5/PRCDavul%20Tek.wav",
-        "PRCBENDiR 41": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer5/PRCBENDiR%2041.wav",
-        "PRCBENDiR 42": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer5/PRCBENDiR%2042.wav",
-        "PRCBENDiR C1": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer5/PRCBENDiR%20C1.wav",
-        "PRCBENDiR C4": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer5/PRCBENDiR%20C4.wav"
+        "dom": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/Ban1.mp3",
+        "tak": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/Bandeer/Ban2.wav",
+        
+        "saqfa": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/plus/saqfa.wav",
+        
+        "sagat1": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/sagat/sagat1.wav",
+        "sagat2": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/sagat/sagat2.wav",
+        "sagat3": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/sagat/sagat3.wav",
+        "sagat4": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/sagat/sagat4.wav",
+        
+        "tabla dom": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Dom%201.wav",
+        "tabla tak": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Tak%201.wav",
+        "tabla sak": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Sak%201.wav",
+        "tabla tap": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Tap%202.wav",
+        "tabla traa": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Traa.wav",
+        "tabla trah1": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Trah.wav",
+        "tabla trah2": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Trahh%202.wav",
+        "tabla trah3": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Trahh%203.wav",
+        "tabla trah4": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Trahhh.wav",
+        "tabla trath": "https://raw.githubusercontent.com/9hamz999/arabic-drums-edu/refs/heads/main/sounds/tabla/Tabla%20Q%20Trath.wav"
     };
 
     const rows = [];
